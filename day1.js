@@ -110,3 +110,64 @@ switch(choice) {
     default:
         console.log("Invalid choice");
 }
+// PRACTICE QUESTION
+// question 1
+// The Swapper: Create two variables, A and B, and assign them numbers. Write a few lines of code to swap their values so that A gets B's value and vice-versa.
+let num1 = 5;
+let num2= 10;
+[num1,num2]= [num2,num1];
+console.log("num1=", num1, "num2=", num2);
+
+//Question 2
+//TYPE CHEAKER Write a function that takes one input and console.log's a message saying "This is a number" or "This is a string" based on the data type provided.
+function see(input){
+    
+    if (typeof input=== "number"){
+        console.log("this is a number");
+    } else if (typeof input ==="string"){
+        console.log("this is a string");   
+    } else{
+        console.log("this is neither a number nor a strings");
+    }
+}
+
+see("rahul");
+see(55);
+
+
+//Question no 3
+//Initials Creator: Given a variable let fullName = "John Doe", write code to extract the first letter of the first name and the first letter of the last name to create the string "JD".
+let fullName = "john Deo"
+
+let NameArray = fullName.split(" "); // Result: ["John", "Doe"]
+
+let firstInitial = NameArray[0][0]; // "J"
+let lastInitial = NameArray[1][0];  // "D"
+
+let finalresult = firstInitial + lastInitial;
+
+console.log("THE FINAL STRING IS :- ", finalresult); // "JD"
+
+
+//Question no-4
+//The Cleaner: Given the string let messy = " Javascript is fun ", write a single line of code that removes the extra spaces at the start/end and changes all the letters to lowercase.
+let messy = " Javascript is fun "
+messy.trim().toLowerCase();
+console.log(messy.trim().toLowerCase());
+
+
+// QUESTION NO :-5
+//The Grocery List: Create an array called cart with three items. Write code to add "Milk" to the end, "Eggs" to the beginning, and then remove the very last item you just added.
+let cart =["bread", "apple","jam"];
+cart.push("milk");
+cart.unshift("eggs");
+cart.pop();
+console.log(cart);
+
+// QUESTION NO -6
+//Value Finder: Given let numbers = [10, 20, 30, 40, 50], write a line of code that checks if the number 30 exists in the array (returning true or false) and another line to find the index of the number 50.
+let numbers = [10, 20, 30, 40, 50]
+let exists = numbers.includes(30);
+let index = numbers.indexOf(50);
+console.log("the number 30 exists", exists)
+console.log("th index of  number 50 :- ", index)
