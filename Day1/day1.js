@@ -169,5 +169,5 @@ console.log(cart);
 let numbers = [10, 20, 30, 40, 50]
 let exists = numbers.includes(30);
 let index = numbers.indexOf(50);
-console.log("the number 30 exists:- ", exists)
+console.log("the number 30 exists", exists)
 console.log("th index of  number 50 :- ", index)
