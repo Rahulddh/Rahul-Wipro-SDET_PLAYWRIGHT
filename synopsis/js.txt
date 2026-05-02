@@ -115,10 +115,31 @@ arr.length;
 arr.push(val);
 
 5- pop
-ar.pop();
+arr.pop();
 
 6- Unshift
 arr.unshift(); //add in the beginning
 
 7- Shift
 arr.shift(); //removes from the beginning
+
+
+# REDUCE FUNCTION 
+
+const GG=[]; // array
+const aa= GG.reduce(( empty, array) => {contion}, intial value of new array/object );
+EXAMPLE 
+
+const fruitBasket = ['apple', 'banana', 'cherry', 'apple', 'apple', 'banana', 'pineapple']; // apple: 3, banana: 3, cherry: 1, pineapple: 1
+const tally = fruitBasket.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {}); // intial value of acc is an empty object
+console.log(tally);
+
+# DOM Manipulation:
+
+->Login-Form designing
+->Navigating to other pages using "window.location.href = "page_name";"
+->Manipulating different elements using selectors like id and class
+
