@@ -1,0 +1,124 @@
+Javascript:- it is a lightweight, interpreted, high- level programming language.
+
+let :- variable cnnot be re-decleared but can be update. it is a block scope variable.
+var:- variable can be re- decleared and update. it is a global scope variable.
+const:- var cannot be re- decleared or update. it is a block scope variable.
+
+why we use let instnt of var?
+answer:- 
+1- var is re- decleared
+2- it is a global scope variable
+3- var add in window
+4- it is function- scoped
+5- hoisted and initialzed as undefine
+6- temporal dead zone
+
+Hoisting:- it's divide the variable into two parts declaraction and initialization, and declaraction part goes to top and initialization part goes to down.
+example:- 
+console.log(x);
+var x= 12;
+
+DATA TYPE: primitive and non- primitive
+primitive:- number,string, bigint, boolean, undefine, null, symbol
+non- primitive:- object, array, function
+
+object:-it is a collection of values in key and value format. ex- {name ; "rahul}
+array:- it is also a collection of values. ex- [2,3,4,5]
+
+GIT COMMANDS:
+git config --global user.name " "
+git config --global user.email " "
+
+git remote add origin "Link"
+
+cd .. --this is ued to come out of directory
+git init
+git add .
+git commit -m "message"
+git push origin main
+git push -f origin main - for forced push
+
+
+OPERATORS
+1- ARITHMETIC OPERATORS:- +,-,*,/, %(Modules),**
+2- ASSIGNMENT OPERATORS:- +,+=,-+,*=,%=, **=
+3- COMPRASION OPERATORS:- ==,===,!=,!==, >=, <=
+4- LOGICAL OPERATORS:- &&(AND),||(OR),!(NOT)
+
+
+CONDITION STATMENT
+1- if 
+2- if- else
+3- else-if
+
+>- prompt- it is use to take the input from the user.
+
+LOOPS
+1-for("condtion"=> start; stop; update){}; ex- for (i=1,1<=10,1++);
+2- while("condtion", stop){};
+3- do-while loop
+4- for- of :- use in strings and array
+5- for- in :- use in array and object
+
+Template literals:
+
+`Hello ${a}, ${b} and ${c}!`;
+
+#Arrow Function:
+let sum =(x,y)=>x+y;
+
+
+#Map function:
+arr.map(x => x*5);
+
+
+
+#Filter function:
+filter out the irrelvent values => 
+arr.filter(x => typeof(x) === "number");
+
+
+#Generate Random Value:
+Math.random() * 100 //0-100
+
+
+
+#Floor:
+Math.floor(Math.random()*10+1);
+
+
+#Ceil:
+Math.ceil(Math.random()*100);
+
+
+#TypeCasting:
+let strnum="5";
+console.log(Number(strnum));--here string is converted to number
+console.log(Integer.parseInt(strnum));//5
+console.log(Integer.parseFloat(strnum));//5.0
+cosole.log(String(5))//"5"--converts to string
+
+
+#Array Methods:
+
+
+1- IndexOf
+arr.indexOf("val"); //returns index
+
+2- Includes
+arr.includes("val"); //returns boolean value
+
+3- length
+arr.length;
+
+4- push
+arr.push(val);
+
+5- pop
+ar.pop();
+
+6- Unshift
+arr.unshift(); //add in the beginning
+
+7- Shift
+arr.shift(); //removes from the beginning
