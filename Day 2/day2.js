@@ -89,6 +89,11 @@ const prices = [10, 20, 30, 40]; // tasks: find the total of all elements
 //     s += prices[i]; // s = s + prices[i]
 // }
 
+//let newsd = sd.reduce(function(acc, val){
+  //  return(acc + val);
+//})
+//console.log(newsd);
+ 
 const total = prices.reduce((acc, curr) => { return acc + curr }, 0);
 // 0 + 10 = 10
 // 10 + 20 = 30

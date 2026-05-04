@@ -141,5 +141,6 @@ console.log(tally);
 
 ->Login-Form designing
 ->Navigating to other pages using "window.location.href = "page_name";"
+->Manipulating different elements using selectors like id and class;
 ->Manipulating different elements using selectors like id and class
 
