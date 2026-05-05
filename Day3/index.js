@@ -121,11 +121,8 @@ const product = [{ id: 1, title: 'Laptop' }, { id: 2, title: 'Mouse' }];
     return val.title;
  })*/
 
-const titl = product.map(function(val){
-    return val.title
-})
 
-//const titl= product.map( product => product.title);
+const titl= product.map( product => product.title);
 console.log(titl);
 
 
