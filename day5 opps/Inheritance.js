@@ -23,3 +23,4 @@ const admin1 = new Admin("Bob", "Super Admin");
  
 user1.logIn(); // Alice has logged in.
 admin1.logIn(); // Bob has logged in. Bob has admin privileges as a Super Admin.
+
