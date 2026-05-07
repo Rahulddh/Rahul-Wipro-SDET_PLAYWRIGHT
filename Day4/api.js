@@ -140,22 +140,22 @@
 //   .then(arr => arr.map(d => d.attributes.body))
 //   .then(console.log);
 
-async function aa() {
-    const key = await fetch("https://dogapi.dog/api/v2/facts");
-    const n= await key.json()
+// async function aa() {
+//     const key = await fetch("https://dogapi.dog/api/v2/facts");
+//     const n= await key.json()
     
-    let j= n.data.map(function(a){
-        return a.attributes.body
-    });
-    return j;
+//     let j= n.data.map(function(a){
+//         return a.attributes.body
+//     });
+//     return j;
 
-}
+// }
 
-async function k() {
-    const g = await aa()
-    console.log(g.join("\n"));
-}
-k()
+// async function k() {
+//     const g = await aa()
+//     console.log(g.join("\n"));
+// }
+// k()
 
 //   //7.Crypto — CoinGecko
 // fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd")
