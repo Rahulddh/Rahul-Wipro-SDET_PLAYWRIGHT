@@ -21,39 +21,39 @@ const rawFlights = [
 
 
 
-// const rawFlights = [
-//  "London-Paris:150",
-//  "New York-Tokyo:invalid",
-//  "Dubai-Mumbai:450",
-//  "Berlin-Rome:95"
-// ];
+const rawFlights = [
+ "London-Paris:150",
+ "New York-Tokyo:invalid",
+ "Dubai-Mumbai:450",
+ "Berlin-Rome:95"
+];
 
-// const cleanflights = rawFlights.map(function(flight){
-//     const [route,pricevalue]= flight.split(":");
-//     const [from, to]= route.split("-");
+const cleanflights = rawFlights.map(function(flight){
+    const [route,pricevalue]= flight.split(":");
+    const [from, to]= route.split("-");
 
-//     let price = Number(pricevalue);
-//     if (isNaN(price)){
-//         price =0;
-//     }
+    let price = Number(pricevalue);
+    if (isNaN(price)){
+        price =0;
+    }
 
-//     return{
-//         from,
-//         to,
-//         price
-//     };
-// });
+    return{
+        from,
+        to,
+        price
+    };
+});
 
-// const preflight= cleanflights.filter(function(flight){
-//     return flight.price >= 100 && flight.price <= 500
-// });
+const preflight= cleanflights.filter(function(flight){
+    return flight.price >= 100 && flight.price <= 500
+});
 
-// preflight.sort(function(a,b){
-//     return a.price - b.price;
-// });
+preflight.sort(function(a,b){
+    return a.price - b.price;
+});
 
-// const result = JSON.stringify(preflight, null,2)
-// console.log(result);
+const result = JSON.stringify(preflight, null,2)
+console.log(result);
 
 
 /*### Question 2: The E-Commerce Discount Applicator
