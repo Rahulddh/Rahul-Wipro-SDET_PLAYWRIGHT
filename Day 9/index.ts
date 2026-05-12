@@ -113,4 +113,3 @@ function logLength<T extends HasLength>(arg: T): void { // T -> property .length
 
 logLength("Aaryan"); // string --> length
 logLength([1, 2, 3]); // array --> length
-// logLength(10); // number --> X
