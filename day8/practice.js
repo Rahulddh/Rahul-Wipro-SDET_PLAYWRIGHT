@@ -2,31 +2,31 @@
 
 // // 1. Create a program that swaps two numbers without using a third variable.
 
-// let a= 5;
-// let b= 10;
-// [a,b]= [b,a];
-// console.log("a: ", a);
-// console.log("b: ", b);
+let a= 5;
+let b= 10;
+[a,b]= [b,a];
+console.log("a: ", a);
+console.log("b: ", b);
 
 
 // // 2. Write a program to check whether a given value is a number, string, boolean, null, or undefined.
 
-// let x= "Rahul";
-// if (typeof x === "number"){
-//     console.log("x is a number");
-// } 
-// else if (typeof x === "string"){
-//     console.log("x is a string");
-// }
-// else if (typeof x === "boolean"){
-//     console.log("x is a boolean");
-// }
-// else if (typeof x === "null"){
-//     console.log("x is a null");
-// }
-// else if (typeof x === "undefined"){
-//     console.log("x is a undefined");
-// }
+let x= "Rahul";
+if (typeof x === "number"){
+    console.log("x is a number");
+} 
+else if (typeof x === "string"){
+    console.log("x is a string");
+}
+else if (typeof x === "boolean"){
+    console.log("x is a boolean");
+}
+else if (typeof x === "null"){
+    console.log("x is a null");
+}
+else if (typeof x === "undefined"){
+    console.log("x is a undefined");
+}
 
 // // 3. Convert temperature from Celsius to Fahrenheit using variables.
 
@@ -445,35 +445,35 @@
 // // console.log("greatest of 5, 10 and 3: ", greatest(5,10,3));
 
 
-// function greatest(a,b,c){
-//     if (a>b && a>c){
-//         console.log(a);
-//     }
-//     if (b>a && b>c){
-//         console.log(b);
-//     }
-//     if (a==c && a==b){
-//         console.log("all numbers are equal");
-//     }
-//     if (c>a && c>b){
-//         console.log(c);
-//     }
-// }
-// greatest(5,5,5);
+function greatest(a,b,c){
+    if (a>b && a>c){
+        console.log(a);
+    }
+    if (b>a && b>c){
+        console.log(b);
+    }
+    if (a==c && a==b){
+        console.log("all numbers are equal");
+    }
+    if (c>a && c>b){
+        console.log(c);
+    }
+}
+greatest(5,5,5);
 
 // //2. Write a function to check whether a number is palindrome.
 
-function isPalindrome(str){
-    let reverse = "";
-    for(i = str.length -1; i>=0; i--){
-        reverse+= str[i];
-    }
-    if (str === reverse){
-        console.log(str + " is a palindrome");
-    }
-    else{
-        console.log(str + " is not a palindrome");
-    }
-}
+// function isPalindrome(str){
+//     let reverse = "";
+//     for(i = str.length -1; i>=0; i--){
+//         reverse+= str[i];
+//     }
+//     if (str === reverse){
+//         console.log(str + " is a palindrome");
+//     }
+//     else{
+//         console.log(str + " is not a palindrome");
+//     }
+// }
 
-isPalindrome("madam");
+// isPalindrome("madam");
