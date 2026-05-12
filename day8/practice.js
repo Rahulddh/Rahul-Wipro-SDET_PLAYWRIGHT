@@ -30,25 +30,25 @@ else if (typeof x === "undefined"){
 
 // // 3. Convert temperature from Celsius to Fahrenheit using variables.
 
-// let celsius= 24;
-// let Fahrenheit = celsius*(9/5)+32;
-// console.log("Temperature in Fahrenheit: ", Fahrenheit);
+let celsius= 24;
+let Fahrenheit = celsius*(9/5)+32;
+console.log("Temperature in Fahrenheit: ", Fahrenheit);
 
 // // 4. Create a simple calculator using variables and arithmetic operators.
 
-// let num1= 10;
-// let num2= 5;
-// console.log("Addition: ", num1 + num2);
-// console.log("Subtraction: ", num1 - num2);
-// console.log("Multiplication: ", num1 * num2);
-// console.log("Division: ", num1 / num2);
+let num1= 10;
+let num2= 5;
+console.log("Addition: ", num1 + num2);
+console.log("Subtraction: ", num1 - num2);
+console.log("Multiplication: ", num1 * num2);
+console.log("Division: ", num1 / num2);
 
 // // 5. Write a program that takes a user’s birth year and calculates age.
 
-// let bornyear= 2003;
-// let currentyear=2026;
-// let age = currentyear- bornyear;
-// console.log(age)
+let bornyear= 2003;
+let currentyear=2026;
+let age = currentyear- bornyear;
+console.log(age)
 
 
 // // #### 2. Strings ####
@@ -56,13 +56,13 @@ else if (typeof x === "undefined"){
 // // 1. Reverse a string without using built-in reverse methods.
 
 
-// let str= "Rahul Ranjan";
-// let reverse = "";
-// for ( let i = str.length - 1; i>=0; i--){
-//     reverse += str[i];
-// }
-// console.log("original string: ", str);
-// console.log("reversed string: ", reverse);
+let str= "Rahul Ranjan";
+let reverse = "";
+for ( let i = str.length - 1; i>=0; i--){
+    reverse += str[i];
+}
+console.log("original string: ", str);
+console.log("reversed string: ", reverse);
 
 
 // // 2. Count the number of vowels in a given string.
