@@ -258,28 +258,28 @@
 // }
 
 
-// 10. Mapped Types with Key Remapping
-// Scenario: You have a data model and need to generate a type for an API response that "prefixes" all the keys.
-// Task:
-// 1- Define an interface Car { make: string; model: string; }.
-// 2- Create a mapped type ApiResponse<T> that iterates through keys of T and renames them to be uppercase and prefixed with DATA_ 
-// (e.g., make becomes DATA_MAKE).
+// // 10. Mapped Types with Key Remapping
+// // Scenario: You have a data model and need to generate a type for an API response that "prefixes" all the keys.
+// // Task:
+// // 1- Define an interface Car { make: string; model: string; }.
+// // 2- Create a mapped type ApiResponse<T> that iterates through keys of T and renames them to be uppercase and prefixed with DATA_ 
+// // (e.g., make becomes DATA_MAKE).
 
-interface car {
-    make: string,
-    model: string
-}
+// interface car {
+//     make: string,
+//     model: string
+// }
 
-type ApiResponse<T> = {
-    [K in keyof T as `DATA_${Uppercase<string & K>}`]: T[K]
-}
+// type ApiResponse<T> = {
+//     [K in keyof T as `DATA_${Uppercase<string & K>}`]: T[K]
+// }
 
-type carApi = ApiResponse<car>;
+// type carApi = ApiResponse<car>;
 
-const response: carApi = {
-    DATA_MAKE: "Toyota",
-    DATA_MODEL: "Corolla"
-}
+// const response: carApi = {
+//     DATA_MAKE: "Toyota",
+//     DATA_MODEL: "Corolla"
+// }
 
-console.log(response.DATA_MAKE);  // Toyota
-console.log(response.DATA_MODEL); // Corolla
+// console.log(response.DATA_MAKE);  // Toyota
+// console.log(response.DATA_MODEL); // Corolla
