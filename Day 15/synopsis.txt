@@ -1,0 +1,13 @@
+Day 15 
+
+npx playwright test --ui :- this command run in UI interface
+npx playwright codegen <link>:- this help to find the locator inside the website.
+
+
+ANNOTATION
+ 
+1- .skip():- use to skip the test case.
+2- .fail():- use to fail the testcase intensely.
+3- .fixme():- we use this when we are working on it and i have to run so its help to skip.
+4- .slow():- use to triple the timeout.
+5- .step():- use to divide the testcase into multiple testcase. 
